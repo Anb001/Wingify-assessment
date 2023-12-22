@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="bg">
+
+        </div>
+        <div id="form-img">
+            <div id="background-img">
+
+                <h2>Sample Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veritatis assumenda quo. Labore
+                    nulla illo aperiam laborum eius aliquam? Laboriosam omnis asperiores placeat dolore iure recusandae
+                    unde, quibusdam nisi iusto.
+                </p>
+
+            </div>
+            <div id="form">
+                <form action="" name="acc-form">
+                    <h3>Create an account</h3>
+                    <div class="wrap">
+                        <label for="email"><b>Enter your email</b></label>
+                        <input type="email" id="email" name="email">
+                        <p class="error email-error"></p>
+
+                    </div>
+                    <label class="date"><b>Date of birth</b> <small>(Optional)</small></label>
+                    <div class="dob">
+                        <div class="day">
+                            <span>
+                                <label for="day">Date</label></span>
+                            <span><select name="day" id="day"></select>
+                            </span>
+                        </div>
+                        <div class="month">
+                            <span>
+                                <label for="month">Month</label></span>
+                            <span><select name="month" id="month"></select>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <label for="year">Year</label></span>
+                            <span><select name="year" id="year">Year:</select>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <label for="pwd"><b>Choose a strong password</b></label>
+                        <input type="password" id="pwd" name="password">
+                    <p class="error password-error"></p>
+
+                    </div>
+
+
+                    <h4>Are you an agency or individual?</h4>
+
+                    <div class="select">
+                        <input type="radio" id="ind" name="agency or ind">
+                        <label for="ind">Individual</label>
+
+
+
+                        <input type="radio" id="agency" name="agency or ind">
+                        <label for="agency">Agency</label>
+
+
+                    </div>
+
+                    <button typ="submit">
+                        Submit
+
+                    </button>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

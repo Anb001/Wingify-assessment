@@ -1,0 +1,315 @@
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bg {
+    background-color: rgb(160, 104, 160);
+    width: 100%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 0% 0% 30% 30%;
+    opacity: 0.7;
+
+}
+
+#background-img {
+    color: white;
+    background-image: url('img.jpg');
+    background-size: cover;
+    width: 80%;
+    clip-path: polygon(0 0, 0% 85%, 25% 100%, 100% 100%, 100% 0);
+
+
+}
+
+#background-img h2 {
+    text-align: center;
+    margin-top: 32%;
+    margin-bottom: 20%;
+
+
+}
+
+#background-img p {
+    text-align: center;
+}
+
+
+#form-img {
+    position: relative;
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#form {
+    background-color: white;
+    margin-left: 0%;
+    width: 80%;
+    padding-left: 4%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 20%, 75% 0);
+    border-bottom: 1px solid rgb(203, 203, 210);
+    border-right: 1px solid rgb(203, 203, 210);
+    padding-bottom: 20px;
+
+}
+
+form h3 {
+    margin-top: 15%;
+
+}
+
+form label {
+
+    margin-right: 10%;
+
+
+}
+
+form .wrap {
+    margin-bottom: 26px;
+}
+
+
+form .wrap input {
+    height: inherit;
+    width: 80%;
+    border: 1px solid black;
+    margin-top: 12px;
+}
+
+form button {
+    border: none;
+    margin-top: 10%;
+    height: 35px;
+    width: 60%;
+    color: white;
+    background-color: rgb(85, 148, 250);
+    border-radius: 4px;
+
+}
+
+.wrap {
+    margin-bottom: 20px;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    height: 5%;
+    width: 75%;
+    margin-top: 0%;
+
+}
+
+form span {
+    display: block;
+    margin: 10px 0;
+}
+
+.month {
+    margin-left: -4%;
+    margin-right: 4%;
+}
+
+#day {
+    width: 50%;
+}
+
+#month {
+    width: 90%;
+}
+
+form select {
+    width: 70%;
+}
+
+
+
+form span label {
+    margin-left: 8%;
+}
+
+
+.dob {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 14px;
+}
+
+.dob div {
+    width: 30%;
+}
+
+.day {
+    width: 20%;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: smaller;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .select input {
+        margin-top: 8%;
+    }
+
+    .select label {
+        margin-top: -9%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    body {
+        font-size: x-small;
+    }
+}
+
+@media only screen and(max-width:550px) {
+    body {
+        font-size: xx-small;
+    }
+
+    h3 {
+        font-size: xx-small;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #form-img {
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        place-self: flex-start;
+    }
+
+    #background-img {
+        background-image: url('img2.jpg');
+        height: auto;
+        width: 100vw;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 100%, 100% 0);
+
+    }
+
+    #background-img h2 {
+        text-align: left;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 24px;
+        margin-left: 24px;
+    }
+
+    #background-img p {
+        font-size: medium;
+        text-align: left;
+        margin: 0 24px 24px 24px;
+    }
+
+    #form {
+        font-size: medium;
+        width: 100vw;
+        border: none;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 100%, 100% 0);
+        padding-left: 0;
+
+    }
+
+    #form h3 {
+        margin-top: 8%;
+
+    }
+
+    #form input {
+        height: 20px;
+    }
+
+
+
+    form {
+        margin-left: 6%;
+    }
+
+    #bg {
+        top: 96%;
+        width: 100vw;
+        height: 15vh;
+        border-radius: 40% 40% 0% 0%;
+    }
+
+
+    .select {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+
+    .date {
+        margin-top: 10%;
+
+    }
+
+    .select label {
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+
+    .select input {
+        margin-top: 0%;
+    }
+
+    #agency {
+        margin-left: 15%;
+    }
+
+    #form button {
+        margin-top: 4%;
+        width: 30%;
+    }
+
+}
